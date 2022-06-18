@@ -8,7 +8,7 @@ import Question from './Components/Question';
 import YourQuestions from './Components/YourQuestions';
 import Login from './Components/Login';
 import Answer from './Components/Answer';
-import Askquestion from './Components/AskQuestion';
+import CreateAccount from './Components/CreateAccount';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -16,10 +16,9 @@ root.render(
     <Router>
       <Routes>
         <Route path='/login' element={<Login/>}/>
+        <Route path='/signup' element={<CreateAccount/>}/>
         <Route path='/' element={<App/>}>
-          <Route path='/' element={<Question/>}>
-          <Route path='/askquestion' element={<Askquestion/>}/>
-          </Route>
+          <Route path='/' element={<Question/>}/>
           <Route path='profile' element={<Profile/>}>
             <Route path='yourquestions' element={<YourQuestions/>}/>
           </Route>

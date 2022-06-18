@@ -17,6 +17,11 @@ const App = () => {
         navigate('/login')
     })
   }
+  const logOut=()=>{
+    sessionStorage.setItem("username",null)
+    sessionStorage.setItem("session","null")
+    navigate('/login')  
+  }
   useEffect(()=>{
     getAuth()
   },[])
@@ -30,7 +35,7 @@ const App = () => {
         <div className='center'>
           <Link to={'/'}><h1>Queries</h1></Link>
           <div>
-            <button>Log Out</button>
+            <button onClick={logOut}>Log Out</button>
             <i className='material-icons'><Link to={'/profile'}>account_circle</Link></i> 
           </div>
         </div>

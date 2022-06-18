@@ -4,14 +4,17 @@
   padding: 0;
 }
 .homepage{
-  background-image: url('/public/mainBG.svg');
+  background-image: url('/public/background.svg');
   background-size: cover;
   background-attachment: fixed;  
+}
+button{
+  cursor: pointer;
 }
 /* Styling the Navbar */
 
 nav{
-  background-color: #ff5964;
+  background-color: #1F2833;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,22 +30,27 @@ nav .center{
   justify-content: space-between;
   padding: 8px;
 }
+nav .center h1{
+  font-size: 2.1em;
+  color: #66FCF1;
+  font-family: 'Poppins', sans-serif;
+}
 nav .center div{
   display: flex;
   align-items: center;
   width: 10%;
   justify-content: space-between;
-  font-family: 'Nanum Gothic', sans-serif;
 }
 nav .center div i{
-  font-size: 2.1em;
+  font-size: 2.3em;
+  /* color: white; */
 }
 nav a{
-  color: black;
+  color: #66FCF1;
   text-decoration: none;
 }
 nav div button{
-  background-color: #59adf6;
+  background-color: #66FCF1 ;
   padding: 8px;
   border-radius: 5px;
   border: none;
@@ -50,16 +58,14 @@ nav div button{
 
 /* Styling Main Body */
 .body{
-  border: 1px solid black;
   display: flex;    
   justify-content: center;
   /* align-items: center; */
-  min-height: 92.5vh;
+  min-height: 90vh;
 }
 .body .center{
   width: 75%;
   display: flex;
-  font-style: "poppins";
   font-family: 'Poppins', sans-serif;
   background-color: rgba(255, 255, 255, 0.608);
 }
@@ -67,7 +73,7 @@ nav div button{
 .sideNavBar{
   /* border: 1px solid black;   */
   position: sticky;
-  top: 51px;
+  top: 67px;
   display: flex;
   flex-direction: column;
   width: 15%;
@@ -77,6 +83,10 @@ nav div button{
 .sideNavBar a{
   text-decoration: none;
   padding-top: 10px;
+  color: rgb(73, 73, 73);
+}
+.sideNavBar a:hover{
+  color: black;
 }
 
 /* Styling the Outlet component */

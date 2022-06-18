@@ -2,8 +2,6 @@
 .login{
     height: 100vh;
     background: url('/public/background.svg');
-    /* background-repeat: no-repeat;
-    background-size: cover; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -52,7 +50,8 @@
     flex-direction: column;
 }
 .form div button{
-    margin-top: 10px;
+    margin: 0 auto;
+    margin-top:15px;
     height: 30px;
     width: 90px;
     font-size: 1em;
@@ -60,10 +59,15 @@
     color: #fff;
     background-color: #1778f2;
     border-radius: 5px;
+
 }
 .form a{
     font-size: 1.1em;
     margin-top: 20px;
+    color: white;
+}
+.form a:hover{
+    color: rgb(230, 230, 230);
 }
 .form hr{
     color: #fff;
@@ -71,6 +75,9 @@
     margin-top: 15px;
 }
 /* Styling the Profile Component */
+.profile{
+    margin-top: 10px;
+}
 .profile .aligns{
     display: flex;
 }
@@ -278,3 +285,4 @@
     margin-left: 4px;
     padding: 4px;
 }
+/* Styling the SignUp Component */
