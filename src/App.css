@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Nanum+Gothic&family=Poppins:wght@300&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+.homepage{
+  background-image: url('/public/mainBG.svg');
+  background-size: cover;
+  background-attachment: fixed;  
+}
+/* Styling the Navbar */
+
+nav{
+  background-color: #ff5964;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  position: -webkit-sticky;
+  top:0px;
+  z-index: 2;
+}
+nav .center{
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+}
+nav .center div{
+  display: flex;
+  align-items: center;
+  width: 10%;
+  justify-content: space-between;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+nav .center div i{
+  font-size: 2.1em;
+}
+nav a{
+  color: black;
+  text-decoration: none;
+}
+nav div button{
+  background-color: #59adf6;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+}
+
+/* Styling Main Body */
+.body{
+  border: 1px solid black;
+  display: flex;    
+  justify-content: center;
+  /* align-items: center; */
+  min-height: 92.5vh;
+}
+.body .center{
+  width: 75%;
+  display: flex;
+  font-style: "poppins";
+  font-family: 'Poppins', sans-serif;
+  background-color: rgba(255, 255, 255, 0.608);
+}
+/* Styling the Side NavBar */
+.sideNavBar{
+  /* border: 1px solid black;   */
+  position: sticky;
+  top: 51px;
+  display: flex;
+  flex-direction: column;
+  width: 15%;
+  height: 20vh;
+  padding: 10px 10px 15px 15px;
+}
+.sideNavBar a{
+  text-decoration: none;
+  padding-top: 10px;
+}
+
+/* Styling the Outlet component */
+.outlet{
+  width: 100%;
+  margin-left: 14px;
+  padding-bottom: 20px;
+}

@@ -1,0 +1,280 @@
+/* Styling Login Component */
+.login{
+    height: 100vh;
+    background: url('/public/background.svg');
+    /* background-repeat: no-repeat;
+    background-size: cover; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logincenter{
+    border: 1px solid white;
+    width: 400px;
+    height: 340px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.349);
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+.form{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+.form h1{
+    color: #fff;
+    text-align: center;
+}
+.form label{
+    font-size: 1.2em;
+    margin-top: 10px;
+    margin-bottom: 4px;
+    color: #fff;
+}
+.form input{
+    height: 42px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.537);
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding-left: 8px;
+    width: 230px;
+    font-size: 1.1em;
+}
+.form div{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.form div button{
+    margin-top: 10px;
+    height: 30px;
+    width: 90px;
+    font-size: 1em;
+    border: none;
+    color: #fff;
+    background-color: #1778f2;
+    border-radius: 5px;
+}
+.form a{
+    font-size: 1.1em;
+    margin-top: 20px;
+}
+.form hr{
+    color: #fff;
+    width: 230px;
+    margin-top: 15px;
+}
+/* Styling the Profile Component */
+.profile .aligns{
+    display: flex;
+}
+.profile .aligns img{
+    border-radius:20px;
+}
+.profile .aligns div{
+    width: 200px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.yourquery{
+    margin-top: 20px;
+    margin-left: 5px;
+}
+.yourquery a{
+    font-size: 1.4em;
+    text-decoration: none;
+}
+
+/* Styling the Question Component */
+
+.questions1{
+    margin-top: 8px;
+}
+.questionlink{
+    color: rgb(59, 103, 153);
+    padding-right:10px; 
+    border-radius: 10px;
+    margin-top: 15px;
+    width: 87%;
+    border: 1px solid white;
+    padding: 10px;
+    border-left: 4px solid red;
+    margin-right: 10px;
+    background-color: rgba(255, 255, 255, 0.764);
+    min-height: 50px;
+}
+.questionlinkuser {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.questionlink a{
+    text-decoration: none;
+    color: #000 ;
+    /* border: 1px solid black; */
+    width: 70%;
+}
+.questionlinkuser div{
+    display: flex;
+    width: 270px;
+    padding-left: 10px;
+}
+.questionlinkuser div p{
+    padding-right: 16px;
+    font-size: .83em;
+    color: rgb(87, 87, 87);
+}
+
+/* Styling the Your Questions Component */
+.questionss{
+    margin-top: 10px;
+    display: flex;
+    border-left: 4px solid red;
+    padding-left: 6px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    width: 87%;
+    padding: 10px;
+    min-height:50px ;
+    background-color: rgba(255, 255, 255, 0.764);
+}
+.questionss h5,h6{
+    font-size: .8em;
+    color:  rgb(75, 75, 75);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.questionss:hover h5,.questionss:hover h6{
+    font-size: .8em;
+    color:  black;
+}
+.questionss p{
+    font-size:1em;
+    color: rgb(93, 93, 93);
+    padding-top: 8px;
+}
+
+
+/* Styling the  Answers Component */
+.questionss1{
+    /* border: 1px solid black; */
+    width: 60vw;
+}
+.item{
+    border-left: 4px solid red;
+    margin-top: 12px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.764);
+    width: 92%;
+    min-height: 30px;
+    border-radius: 10px;
+}
+.item div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.item div p{
+    color: grey;
+}
+.item:first-child p{
+    font-size: 1.1em;
+}
+#anss{
+    font-size: 1.1em;
+    margin-bottom: 2px;
+}
+.ans1 h2{
+    margin-top: 12px;
+}
+
+.align{
+    /* border: 1px solid black; */
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.align .ans{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.align .ans input{
+    height: 34px;
+    padding-left: 5px;
+    border-radius: 8px;
+    outline: none;
+    margin-top: 10px;
+    width: 400px;
+}
+.align .ans button{
+    width: 80px;
+    height: 25px;
+    margin-top: 12px;
+    background-color: red;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+/* Styling the Ask Question Component */
+.ask{
+    margin-left: 10px;
+    margin-top: 40px;
+}
+.box{
+    width: 70%;
+    /* border: 1px solid black; */
+}
+.askquery{
+    width: 80%;
+    background-color: #fff;
+    border-radius: 15px;
+    padding-left: 10px;
+}
+.ask .box h1{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* margin-left: 15px; */
+    color: black;
+}
+.ask .box .askquery input{
+    width: 80%;
+    height: 30px;
+    margin-left: 4px;
+    padding-left: 4px;
+}
+.askquery label h4{
+    cursor: pointer;
+    padding: 8px 4px 4px 4px;
+}
+.askquery label p{
+    cursor: pointer;
+    margin-left: 4px;
+    color: grey;
+    margin-bottom:6px;
+}
+.askquery div{
+    margin: 10px;
+    padding-bottom: 8px;
+}
+.askquery div button{
+    cursor: pointer;
+    padding: 6px;
+    border: none;
+    background-color: hsl(206,85%,57.5%);
+    border-radius:4px;
+    width: 65px;
+}
+.askquery textarea{
+    margin-left: 4px;
+    padding: 4px;
+}
