@@ -26,7 +26,7 @@ const CreateAccount = () => {
   }
   return (
     <div className='account'>
-      <div className="center">
+      <div className="signupcenter">
         <h1>Create your Account</h1>
         <div className='signupform'>
           <div className='name'>
