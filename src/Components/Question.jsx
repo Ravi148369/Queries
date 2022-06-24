@@ -44,7 +44,7 @@ const Question = () => {
             question.map((value)=>{
               return(
                 <div className='questionlink' key={value._id}>
-                    <Link to={`/answer/${value._id}`} className='link'>
+                    <Link to={`/answer/${value._id}`}>
                       <h3>{value.question}</h3>
                     </Link>
                     <div className='questionlinkuser'>
@@ -84,7 +84,7 @@ const Question = () => {
                   <input type="text" placeholder='type question here.......' id='title' onChange={e=>setQues(e.target.value)}/>
                   <label htmlFor="desc"><h4>Description</h4></label>
                   <label htmlFor="desc"><p> Include all the information someone would need to answer your question</p></label>
-                  <textarea name="ravi" id="desc" cols="60" rows="8" placeholder='type description here......' onChange={e=>setDesc(e.target.value)}></textarea>
+                  <textarea name="ravi" id="desc" cols={40} rows="5" placeholder='type description here......' onChange={e=>setDesc(e.target.value)}></textarea>
                   <div>
                       <button onClick={onClick}>Submit</button>
                   </div>

@@ -55,6 +55,18 @@ nav div button{
   border-radius: 5px;
   border: none;
 }
+/* styling the navbar responive */
+@media only screen and (max-width: 600px){
+  nav .center{
+    width: 90%;
+  }
+  nav .center div{
+    width: 30%;
+  }
+  nav .center h1{
+    font-size: 1.8em;
+  }
+}
 
 /* Styling Main Body */
 .body{
@@ -87,6 +99,15 @@ nav div button{
 }
 .sideNavBar a:hover{
   color: black;
+}
+/* Styling the responsive design */
+@media only screen and (max-width: 600px) {
+  .sideNavBar{
+    display: none;
+  }
+  .body .center{
+    width: 100%;
+  }
 }
 
 /* Styling the Outlet component */

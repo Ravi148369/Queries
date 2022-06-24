@@ -14,8 +14,8 @@
     background-color: rgba(255, 255, 255, 0.349);
     display: flex;
     justify-content: center;
-    /* align-items: center; */
 }
+/* responsive design */
 .form{
     width: 350px;
     display: flex;
@@ -137,6 +137,33 @@
     color: rgb(87, 87, 87);
 }
 
+/* Styling the question component responsive */
+@media only screen and (max-width: 600px){
+    .questions1{
+        width: 95%;
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .questionlinkuser{
+        display: flex;
+        flex-direction: column;
+    }
+    .questionlink{
+        width: 95%;
+    }
+    .questionlink a{
+        font-size: .8em;
+        width: 100%;
+    }
+    .questionlink div{
+        padding-left: 0;
+        width: fit-content;
+    }
+    .questionlinkuser div p{
+        font-size: .7em;
+    }
+
+}
 /* Styling the Your Questions Component */
 .questionss{
     margin-top: 10px;
@@ -165,8 +192,6 @@
     color: rgb(93, 93, 93);
     padding-top: 8px;
 }
-
-
 /* Styling the  Answers Component */
 .questionss1{
     /* border: 1px solid black; */
@@ -283,6 +308,23 @@
 .askquery textarea{
     margin-left: 4px;
     padding: 4px;
+}
+/* styling the ask component responsive */
+@media only screen and (max-width: 600px){
+    .box{
+        width: 100%;
+    }
+    .box h1{
+        font-size: 1.5em;
+    }
+    .askquery{
+        width: 92%;
+    }
+    .askquery label p{
+        font-size: .8em;
+    }
+
+
 }
 /* Styling the SignUp Component */
 .account{
