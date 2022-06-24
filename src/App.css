@@ -3,10 +3,19 @@
   margin: 0;
   padding: 0;
 }
+@media only screen and (min-width: 700px){
 .homepage{
   background-image: url('/public/background.svg');
   background-size: cover;
   background-attachment: fixed;  
+}
+}
+/* styling the home  page responsive */
+@media only screen and (max-width: 600px){
+  .homepage{
+    background-image: url('/public/background.svg');
+    background-size: cover;
+  }
 }
 button{
   cursor: pointer;
@@ -113,6 +122,7 @@ nav div button{
 /* Styling the Outlet component */
 .outlet{
   width: 100%;
+  height: 100%;
   margin-left: 14px;
   padding-bottom: 20px;
 }

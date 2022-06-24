@@ -96,6 +96,22 @@
     font-size: 1.4em;
     text-decoration: none;
 }
+/* Styling profile component responsive */
+@media only screen and (max-width: 600px){
+    .profile .aligns img{
+        height: 100px;
+        width: 100px;
+    }
+    .profile .aligns div{
+        margin-top: 20px;
+    }
+    .profile .aligns div h1{
+        font-size: 1.5em;
+    }
+    .yourquery a{
+        font-size: 1.2em;
+    }
+}
 
 /* Styling the Question Component */
 
@@ -192,13 +208,26 @@
     color: rgb(93, 93, 93);
     padding-top: 8px;
 }
+@media only screen and (max-width: 600px){
+    .questionss {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .questionss p{
+        font-size: .8em;
+    }
+    .questionss a{
+        font-size: 1.1em;
+    }
+}
+
+
 /* Styling the  Answers Component */
 .questionss1{
-    /* border: 1px solid black; */
     width: 60vw;
 }
 .item{
-    border-left: 4px solid red;
+    border-left: 4px solid #45A29E;
     margin-top: 12px;
     padding: 10px;
     background-color: rgba(255, 255, 255, 0.764);
@@ -243,7 +272,7 @@
     height: 34px;
     padding-left: 5px;
     border-radius: 8px;
-    outline: none;
+    border: none;
     margin-top: 10px;
     width: 400px;
 }
@@ -251,10 +280,34 @@
     width: 80px;
     height: 25px;
     margin-top: 12px;
-    background-color: red;
-    color: #fff;
+    background-color: #66FCF1;
+    color: #000;
     border: none;
     border-radius: 5px;
+}
+/* Styling the answer component responsive*/
+@media only screen and (max-width: 600px){
+    
+    .questionss1{
+        width: 94%;
+    }
+    .item:first-child p{
+        font-size: .85em;
+    }   
+    .ans1 p{
+        font-size: .8em;
+    }
+    #anss{
+        font-size: .85em;
+    }
+    .ans1 h2,.ans h2{
+        font-size: 1.3em;
+    }
+    .align .ans input{
+        width: 310px;
+        border: none;
+    }
+
 }
 /* Styling the Ask Question Component */
 .ask{
@@ -323,8 +376,6 @@
     .askquery label p{
         font-size: .8em;
     }
-
-
 }
 /* Styling the SignUp Component */
 .account{
@@ -353,7 +404,6 @@
     margin: 10px;
     border-radius: 8px;
     font-size: .9em;
-    outline: none;
     border: none;
 }
 .signup{
@@ -371,4 +421,10 @@
     background-color: #1778f2;
     border-radius: 5px;
 
+}
+/* Styling the sign up component responsive */
+@media only screen and (max-width: 600px){
+    .signupform input{
+        width: 146px;
+    }
 }

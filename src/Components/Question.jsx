@@ -84,7 +84,7 @@ const Question = () => {
                   <input type="text" placeholder='type question here.......' id='title' onChange={e=>setQues(e.target.value)}/>
                   <label htmlFor="desc"><h4>Description</h4></label>
                   <label htmlFor="desc"><p> Include all the information someone would need to answer your question</p></label>
-                  <textarea name="ravi" id="desc" cols={40} rows="5" placeholder='type description here......' onChange={e=>setDesc(e.target.value)}></textarea>
+                  <textarea name="ravi" id="desc" cols={35} rows="5" placeholder='type description here......' onChange={e=>setDesc(e.target.value)}></textarea>
                   <div>
                       <button onClick={onClick}>Submit</button>
                   </div>
