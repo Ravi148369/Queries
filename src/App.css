@@ -7,7 +7,7 @@
 .homepage{
   background-image: url('/public/background.svg');
   background-size: cover;
-  background-attachment: fixed;  
+  background-attachment: fixed;
 }
 }
 /* styling the home  page responsive */
@@ -83,6 +83,7 @@ nav div button{
   justify-content: center;
   /* align-items: center; */
   min-height: 90vh;
+  border: 1px solid  green;
 }
 .body .center{
   width: 75%;
@@ -124,5 +125,5 @@ nav div button{
   width: 100%;
   height: 100%;
   margin-left: 14px;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
